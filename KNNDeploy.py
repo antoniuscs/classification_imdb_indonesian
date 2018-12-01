@@ -41,7 +41,7 @@ def predict():
 
     X_New = np.array([textSentence])
 
-    pipe = joblib.load('MNBClassifier.pkl')
+    pipe = joblib.load('SVMClassifier.pkl')
 
     resultPredict = pipe[0].predict(X_New)
 
